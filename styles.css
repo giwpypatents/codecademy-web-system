@@ -1,0 +1,209 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background: #FFC107; /* Amber for the background of the nav */
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* First nav item hover effect (Teal) */
+nav li:nth-child(1) a:hover {
+    color: #0095B7; /* Teal */
+}
+
+/* Second nav item hover effect (Light Aqua) */
+nav li:nth-child(2) a:hover {
+    color: #236652; /* Light Aqua */
+}
+
+/* Third nav item hover effect (Amber) */
+nav li:nth-child(3) a:hover {
+    color: #0c0b0a; /* Amber */
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Color blocks styling */
+.color-block {
+    width: 250px;   /* Adjusted width */
+    height: 450px;  /* Adjusted height */
+    margin: 10px;   /* Add space between the blocks */
+    border: 2px solid white;  /* White border around the blocks */
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    align-items: flex-start;  /* Move text towards the top */
+    justify-content: center;  /* Center the text horizontally */
+    padding-top: 20px;        /* Add some padding to move the text down slightly */
+    transition: transform 0.3s ease-in-out;  /* Smooth hover effect */
+}
+
+/* Shrink effect on hover */
+.color-block:hover {
+    transform: scale(0.95);  /* Shrink effect when hovered */
+}
+
+/* Colors section styling */
+#colors {
+    display: flex;               /* Use flexbox to align items horizontally */
+    justify-content: center;     /* Center the blocks horizontally */
+    padding: 1rem;               /* Padding around the section */
+    border: 2px solid #333;      /* Border around the entire colors section */
+    border-radius: 10px;         /* Rounded corners for the border */
+    margin-bottom: 2rem;         /* Spacing below the colors section */
+    flex-wrap: wrap;           /* Allow wrapping if the screen is too small */
+}
+
+#colors h2 {
+    width: 100%;         /* Make the heading take full width */
+    text-align: center;  /* Center the text */
+    margin-bottom: 1rem; /* Add spacing between heading and color blocks */
+}
+
+/* Colors Section */
+.teal {
+    background-color: #0095B7;
+}
+
+.aqua {
+    background-color: #1fb488;
+}
+
+.amber {
+    background-color: #FFC107;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* Fonts section styling */
+#fonts {
+    display: flex;
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center the items horizontally */
+    padding: 1rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    background-color: #A8E3D1;
+}
+
+#fonts h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.font-sample {
+    width: 90%;                  /* Make the font sample blocks take up 90% of the container's width */
+    max-width: 500px;             /* Limit the max width to 500px for better readability */
+    padding: 20px;
+    margin: 10px 0;              /* Add vertical space between the blocks */
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Apply specific font families to each sample */
+.font-sample h3 {
+    margin-bottom: 10px;
+}
+
+.font-sample p {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Background colors and font families */
+.teal {
+    background-color: #0095B7;
+    font-family: 'Playfair Display', serif;
+}
+
+.aqua {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.amber {
+    background-color: #FFC107;
+    font-family: 'Lora', serif;
+}
+/* Text styles section */
+#text-styles {
+    display: flex;
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center the items horizontally */
+    padding: 1rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#text-styles h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.text-style {
+    width: 90%;                  /* Make the text blocks take up 90% of the container's width */
+    max-width: 500px;             /* Limit the max width to 500px */
+    padding: 20px;
+    margin: 10px 0;              /* Add vertical space between the blocks */
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Background colors for text styles */
+.teal {
+    background-color: #0095B7;
+}
+
+.aqua {
+    background-color: black;
+}
+
+.amber {
+    background-color: #FFC107;
+}
+
+.text-style h1, .text-style h2, .text-style h3 {
+    margin: 0;                   /* Ensure headings have no margins */
+    font-weight: bold;
+}
